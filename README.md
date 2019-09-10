@@ -3,11 +3,13 @@
 # Introduction
 Implement finger inverse kinematic with  neural network and reinforcement learning algorithm ddpg.
 
+<img src="https://github.com/qianyuez/finger_inverse_kinematic/blob/master/data/inverse_kinematic1.gif" width="350px"><img src="https://github.com/qianyuez/finger_inverse_kinematic/blob/master/data/inverse_kinematic2.gif" width="350px">
+
 
 # Requirements
 python3.6
 - `numpy`
-- `keras`
+- `tensorflow`
 - `opencv-python`
 
 # Usage
@@ -43,3 +45,29 @@ optional arguments:
   --rl_path RL_PATH     path to load ddpg model weight file, default
                         ./models/rl_model/rl_model.ckpt
 ```
+
+# Train
+`cd finger_inverse_kinematic`
+
+To train regression model, run:
+
+`python train.py --model_type 0`
+
+To train ddpg model, run:
+
+`python train.py --model_type 1`
+
+# Test
+`cd finger_inverse_kinematic`
+
+To test regression model, run:
+
+`python test.py --model_type 0`
+
+To test ddpg model, run:
+
+ `python test.py --model_type 1`
+ 
+# Reference
+The ddpg tensorflow implementation is copied from the reinforcement tutorial by MorvanZhou:
+https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/6-2-DDPG/
