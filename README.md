@@ -5,11 +5,13 @@ Implement finger inverse kinematic with  neural network and reinforcement learni
 <img src="https://github.com/qianyuez/finger_inverse_kinematic/blob/master/data/inverse_kinematic1.gif" width="350px"><img src="https://github.com/qianyuez/finger_inverse_kinematic/blob/master/data/inverse_kinematic2.gif" width="350px">
 
 
+
 ## Requirements
 python3.6
 - `numpy`
 - `tensorflow`
 - `opencv-python`
+
 
 
 ## Usage
@@ -47,6 +49,7 @@ optional arguments:
 ```
 
 
+
 ## Train
 `cd finger_inverse_kinematic`
 
@@ -59,6 +62,7 @@ To train ddpg model, run:
 `python train.py --model_type 1`
 
 
+
 ## Test
 `cd finger_inverse_kinematic`
 
@@ -69,6 +73,7 @@ To test regression model, run:
 To test ddpg model, run:
 
  `python test.py --model_type 1`
+ 
  
  
 ## Reference
